@@ -16,11 +16,12 @@ def fc(h,b):
                 exit(0)
             else:
                 if first.keys().__contains__(j):
+                    # print(first[j])
                     if 'ε' in first[j]:
                         data=first[j].copy()
                         data.pop(data.index('ε'))
                         temp.extend(data)
-                        break
+                        continue
                     else:
                         temp.extend(first[j])
                         break
@@ -57,8 +58,11 @@ def validatefirst(input):
         print(first)
 
     else:
+        # print("In else")
         for k in rem:
+            # print(input[k])
             temp=fc(k,input[k])
+            print(temp)
             if temp.__len__()!=0:
                 first[k]=temp
             else:
