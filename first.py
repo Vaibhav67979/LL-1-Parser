@@ -18,7 +18,7 @@ def fc(h,b):
                 if first.keys().__contains__(j):
                     # print(first[j])
                     if 'ε' in first[j]:
-                        data=first[j].copy()
+                        data=list(first[j].copy())
                         data.pop(data.index('ε'))
                         temp.extend(data)
                         continue
@@ -45,6 +45,8 @@ def firstSymbol(input):
         else:
             continue
     validatefirst(input)
+    # print(first)
+    return first
 
 def modifyfirst():
     for i in first.keys():
@@ -54,15 +56,14 @@ def modifyfirst():
 def validatefirst(input):
     rem=input.keys()-first.keys()
     if rem.__len__()==0:
+        # print(first)
         modifyfirst()
-        print(first)
-
     else:
         # print("In else")
         for k in rem:
             # print(input[k])
             temp=fc(k,input[k])
-            print(temp)
+            # print(temp)
             if temp.__len__()!=0:
                 first[k]=temp
             else:

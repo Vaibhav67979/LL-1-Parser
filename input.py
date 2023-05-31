@@ -1,4 +1,6 @@
 import first as fs 
+import follow as fos
+import table as tb
 dict={}
 print("Enter the number of productions")
 n=int(input())
@@ -13,6 +15,12 @@ for i in range(n):
     dict[head]=body
 
 
-fs.firstSymbol(dict)
+print("Grammer")
+print(dict)
 
+print(fs.firstSymbol(dict))
+
+print(fos.display(dict))
+
+tb.computeTabel(dict)
 
