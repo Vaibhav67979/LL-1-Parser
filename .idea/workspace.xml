@@ -1,10 +1,16 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="44baf4a9-9f41-4955-a215-2b9eae5ab28e" name="Changes" comment="">
+    <list default="true" id="28d98ccc-65a4-47b2-87b0-bafaa89a4fd0" name="Changes" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/first.py" beforeDir="false" afterPath="$PROJECT_DIR$/first.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/follow.py" beforeDir="false" afterPath="$PROJECT_DIR$/follow.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/README.md" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/first.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/follow.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/grammer.txt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/input.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/main.py" beforeDir="false" afterPath="$PROJECT_DIR$/main.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/parser.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/parsetable.py" beforeDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />

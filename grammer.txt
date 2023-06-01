@@ -1,8 +1,0 @@
-S~aX
-X~BY
-X~cY
-Y~dY
-Y~eY
-B~bBc
-B~f
-C~g
