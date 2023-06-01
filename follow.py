@@ -1,3 +1,6 @@
+from first import insert, first
+from main import grammar_first
+
 def rec_follow(k, next_i, grammar_follow, i, grammar, start, grammar_first, lhs):
     if len(k) == next_i:
         if grammar_follow[i] == "null":
