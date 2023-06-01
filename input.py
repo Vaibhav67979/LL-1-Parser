@@ -15,12 +15,12 @@ for i in range(n):
     dict[head]=body
 
 
-print("Grammer")
-print(dict)
+print("Grammer" +str(dict) )
+# print(dict)
 
-print(fs.firstSymbol(dict))
+print("First : "+str(fs.firstSymbol(dict)))
 
-print(fos.display(dict))
+print("Follow : "+str(fos.display(dict)))
 
 tb.computeTabel(dict)
 

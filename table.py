@@ -1,30 +1,36 @@
-from first import first as fs
+from first import fc
 from follow import follow as fos
 
 import pandas as pd
 
 mydata={}
 terminals=['$']
-def computeData(dict):
+def computeTerminals(dict):
     for i,j in dict.items():
         for k in j:
             for l in k:
-                if l in "abcdefghijklmnopqrstuvwxyz1234567890id()+-*/=/{/}":
+                if l in "abcdefghijklmnopqrstuvwxyz1234567890id()+-*/=/{/}" and l not in terminals:
                     terminals.append(l)
 
 def computeTabel(dict):
-    computeData(dict)
+    computeTerminals(dict)
     for i,j in dict.items():
-        s1=fs[i]
-        s2=fos[i]
         temp={}
-        for k in s1:
-            if k!="ε":
-                temp[k]=f"{i}->{j}"
+        for k in j:
+            fstemp=[]
+            fstemp.append(k)
+            s1=fc(i,fstemp)
+            s2=fos[i]
+            # print("first"+str(s1))
+            # for "ε" in s1:
+            if "ε" not in s1:
+                for l in s1:
+                    temp[l]=f"{i}->{k}"
             else:
                 for l in s2:
                     temp[l]=f"{i}->ε"
         mydata[i]=temp
+    print(mydata)
     formatTable()
 
 def formatTable():
