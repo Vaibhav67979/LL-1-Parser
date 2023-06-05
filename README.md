@@ -1,2 +1,2 @@
-# CD-course-activity
-Designing and implementing LL(1) parser in Python
+# LL(1) Parser
+Implementing LL(1) parser in Python
