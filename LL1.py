@@ -370,7 +370,7 @@ rules = ["S -> a B | a c | S d | S e",
 
 nonterm_userdef = ['S', 'B', 'C']
 term_userdef = ['a', 'b', 'c', 'd', 'e', 'f', 'g']
-sample_input_string = "a c"
+sample_input_string = "a b b f c c"
 
 
 diction = {}
